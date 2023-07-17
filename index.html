@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBC News</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js" defer></script>
+</head>
+<body>
+    <div class="site-wrapper" id="mainBody">
+
+        <a href="#site-main" class="screen-reader-text"  > Skip to content</a>
+
+            
+        <div class="header-wrapper">
+            
+            <header class="header">
+                
+                <section class="site-header">
+                    <a href="index.html">
+                        <img id="logo" src="./image/CBC_logo.svg" alt="CBC Logo">
+                    </a>
+                    
+                    <nav class="site-navigation" id="site-navigation">
+
+                        <button class="menuButton" id="menuButton" role="button" aria-expanded="false" href="#">
+                            <span id="menu-button">Menu</span>
+                            <span class="menuButtonCloseTitle" id="close-button">Close</span>
+                            <span class="icon" id="iconMenu">
+                                <svg viewBox="0 0 10 10" focusable="false" class="chevronIcon" id="chevronIconId" width="10px" height="10px" role="presentation">
+                                    <g><path d="M10,0v3L5,7L0,3V0l5,4L10,0z" ></path></g>
+                                </svg>
+                            </span>
+                        </button>
+
+                        <ul class="nav-menu" id="header-menu">
+                            <li class="nav-item news-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sports</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Radio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Music</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Live</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">TV</a>
+                            </li>
+                            <li class="nav-item watch-item">
+                                <a class="nav-link" href="#">Watch</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link  nav-arts" href="#">Arts</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link  nav-books" href="#">Books</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link  nav-docs" href="#">Docs</a>
+                            </li>
+                        </ul>
+        
+                    </nav>
+
+                    <a class="navLink search" aria-expanded="false" aria-label="Search" id="searchButton" role="button" href="/search">
+                        <span class="icon">
+                            <svg class="searchIcon headerSearch" width="15px" height="15px" viewBox="0 0 165 162" focusable="false"><path fill-rule="nonzero" d="M158.88247 135.38291L118.68966 95.4442c5.73759-9.30843 9.21631-20.15477 9.21631-31.88285C127.90597 29.56938 100.1562 2 65.953 2 31.74477 2 4 29.56938 4 63.56134c0 33.987 27.74477 61.56135 61.95299 61.56135 11.80269 0 22.71803-3.45674 32.08567-9.13801l40.19281 39.91868c2.82338 2.80553 7.50212 2.7855 10.3255 0l10.3255-10.26022c2.82337-2.80553 2.82337-7.4547 0-10.26023zm-92.92948-30.78067c-22.80887 0-41.302-18.37622-41.302-41.0409 0-22.66467 18.49313-41.0409 41.302-41.0409 22.80886 0 41.30199 18.37623 41.30199 41.0409 0 22.66468-18.49313 41.0409-41.302 41.0409z"></path></svg>
+                        </span>
+                        <span class="searchText">Search</span>
+                    </a>
+
+                    <button aria-expanded="false" class="profileButtonNav">
+                        <span class="icon"><svg class="profileIcon profilePic" width="15px" height="15px" viewBox="0 0 24 24" focusable="false"><g xmlns="http://www.w3.org/2000/svg" id="Asset-7" transform="translate(6.000000, 0.000000)"><path d="M-3.2,22.9c-0.7,0-1.2-0.7-0.9-1.3C-3.4,19.4-1,15.3,6,15.3c7,0,9.4,4.1,10.2,6.3c0.2,0.7-0.2,1.3-0.9,1.3H-3.2z" id="Path"></path><ellipse id="Oval" cx="6" cy="7" rx="5.8" ry="5.9"></ellipse></g></svg></span>
+                        <span class="profileText">Sign In</span>
+                    </button>
+
+                </section>
+
+                <section class="global-header">
+
+                    <div class="global-nav">
+                    <a class="global-link" id="covid-link" href="#">COVID-19</a>
+                    <a class="global-link" href="#">local updates</a>
+                    <a class="global-link" href="#">watch live</a>
+                    </div>
+                    
+                </section>
+                
+            </header>
+           
+        </div>
+
+        <main>
+            <section>
+                <div class="first-banner">
+                    <img class="image-ban" id="main-banner-photo" src="./image/photo.png" alt="first-banner" >
+                   
+                </div>
+            </section>
+
+            <section class="second-banner">
+                <h2>My Local</h2>
+                <a class="local-city" href="https://www.cbc.ca/news/canada/ottawa">Ottawa</a>
+                
+                <ul class="image-info">
+
+                    <li  class="contentWrapper">
+                        <a class="card-href" href="/news/politics/terrorism-charges-ottawa-2018-19-documents-1.6900043">
+                            <div class="cardImageWrap">
+                                <figure class="imageMedia">
+                                    <div class="placeholder">
+                                        <img  alt="image" 
+                                         src="https://i.cbc.ca/1.6898641.1688652327!/fileImage/httpImage/image.jpeg_gen/derivatives/16x9_780/patrick-gordon-macddonald-court-sketch.jpeg">
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="card-information">
+                                <h3 class="headline">Charges against alleged Ottawa neo-Nazi linked to offences in 2018-19, court documents allege</h3>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li  class="contentWrapper">
+                        <a class="card-href"  href="/news/canada/ottawa/ottawa-police-hate-incident-data-july-2023-1.6899819">
+                            <div class="cardImageWrap">
+                                <figure class="imageMedia">
+                                    <div class="placeholder">
+                                        <img alt="image2" 
+                                         src="https://i.cbc.ca/1.1479438.1680711239!/httpImage/image.jpg_gen/derivatives/16x9_780/ottawa-police-badge-crest-generic-ops.jpg">
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="card-information">
+                                <h3 class="headline">Hate incidents jump nearly 24% in Ottawa, police say</h3>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li  class="contentWrapper">
+                        <a class="card-href" href="/news/canada/ottawa/extradition-proceedings-should-be-straighforward-nation-river-cold-case-1.6898921">
+                            <div class="cardImageWrap">
+                                <figure class="imageMedia">
+                                    <div class="placeholder">
+                                        <img loading="lazy" alt="image3" 
+                                         src="https://i.cbc.ca/1.4850993.1688667265!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/robert-currie.jpg">
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="card-information">
+                                <h3 class="headline" >Law prof confident extradition in Nation River Lady case will be straightforward</h3>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li class="contentWrapper">
+                        <a class="card-href"  href="/news/canada/ottawa/siu-investigation-kingston-july-6-2023-1.6900042">
+                            <div class="cardImageWrap">
+                                <figure class="imageMedia">
+                                    <div class="placeholder">
+                                        <img  alt="image4" 
+                                        src="https://i.cbc.ca/1.5653485.1678566844!/cumulusImage/httpImage/image.jpg_gen/derivatives/16x9_780/siu.jpg">
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="card-information">
+                                <h3 class="headline" >Police watchdog investigating death of man in Kingston</h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="middle">
+                <div class="top-sec">
+                  <div class="top-word">
+                    <h2 class="h2List">Canada's automotive industry just started recovering from COVID-19. Now comes the port strike</h2>
+                  </div>
+                  <img class="middle-img" src="https://thumbnails.cbc.ca/maven_legacy/thumbnails/679/607/vancouver_port_strike_june_7_(4_of_14).jpg?crop=1.777xh:h;*,*&downsize=1130px:*" alt="protest">
+                </div>
+                
+                <div class="middle-list">
+                  <div class="card-content">
+                    <h3 class="h3Lists">Finding a new car to purchase could remain difficult amid shortage of vehicles and parts</h3>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="h3Lists">No word on when talks will resume after port strike negotiations break down.</h3>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="h3Lists">What is port automation — and why are striking workers concerned about it?</h3>
+                  </div>
+                </div>
+                
+                <div class="bottom-list">
+                  <div class="bottom-one">
+                    <h2 class="title-bottom">Strike:</h2>
+                    <h3 class="h3List">How the strike could impact you</h3>
+                  </div>
+                  <div class="bottom-one">
+                    <h2 class="title-bottom">Local:</h2>
+                    <h3 class="h3List">Justin Trudeau, Danielle Smith call for B.C. post strike resolution</h3>
+                  </div>
+                  <div class="bottom-one">
+                    <h2 class="title-bottom">world:</h2>
+                    <h3 class="h3List">How the strike could impact of other side.</h3>
+                  </div>
+                  <div class="bottom-one">
+                    <h2 class="title-bottom">world Wide:</h2>
+                    <h3 class="h3List">How the strike could impact of other countries.</h3>
+                  </div>
+                </div>
+              </section>
+              
+
+            <section class="section-grid">
+                <div class="stories-grid">
+                    
+                    <!-- A grid at the bottom of the page displaying more news stories -->
+                            <a href="" target="_blank">
+                            
+                                <div class="story">
+                                    <h4>Weekend at Bernie's and beyond: 7 movies we grew up with that are secretly Canadian</h4>
+                                    <img src="https://i.cbc.ca/1.6899150.1688671208!/fileImage/httpImage/image.jpg_gen/derivatives/square_220/weekend-at-bernie-s.jpg" alt="story-1">
+                                </div>
+                            </a>
+                            <a href="" target="_blank">
+                                <div class="story">
+                                    <h4>Toronto landlord launches $1.6M lawsuit after city gave stranger approval to rent her condo on Airbnb</h4>
+                                    <img src="https://i.cbc.ca/1.6900188.1688757421!/fileImage/httpImage/image.jpg_gen/derivatives/square_220/allison-rasquinha.jpg" alt="story-2">
+                                </div>
+                            </a>
+                            <a href="" target="_blank">
+                                <div class="story">
+                                <h4>New York Times disbands sports department, will rely on coverage from The Athletic</h4>
+                                <img src="https://i.cbc.ca/1.6902085.1689007103!/fileImage/httpImage/image.jpg_gen/derivatives/square_220/meredith-kopit-levien.jpg" alt="story-3">
+                            </div>
+                            </a>
+                            <a href="" target="_blank">
+                                <div class="story">
+                                    <h4>Speak Now (Taylor's Version) is better than revenge</h4>
+                                    <img src="https://i.cbc.ca/1.6900897.1688771230!/fileImage/httpImage/image.jpeg_gen/derivatives/square_220/speak-now-taylor-s-version.jpeg" alt="story-4">
+                                </div>
+                            </a>
+                            <a href="" target="_blank">
+                                <div class="story">
+                                    <h4>BBC suspends presenter accused of paying teenager for sexually explicit photos</h4>
+                                    <img src="https://i.cbc.ca/1.6733710.1675283610!/fileImage/httpImage/image.jpg_gen/derivatives/square_220/2184315.jpg" alt="story-5">
+                                </div>
+                            </a>
+                            <a href="" target="_blank">
+                                <div class="story">
+                                    <h4>40 Canadian books to read this summer</h4>
+                                    <img src="https://i.cbc.ca/1.6898711.1688655442!/fileImage/httpImage/image.jpg_gen/derivatives/square_220/cbc-books-summer-header.jpg" alt="story-6">
+                                </div>
+                            </a>
+                            <a href="" target="_blank">
+                                <div class="story">
+                                <h4>Drive-by shooting that injured 2 may be case of stunt driving-related road rage, police say</h4>
+                                <img src="https://i.cbc.ca/1.6901753.1688986122!/fileImage/httpImage/image.JPG_gen/derivatives/square_220/shooting-yonge-bloor.JPG" alt="story-7">
+                                </div>
+                            </a>
+                            <a href="" target="_blank">
+                                <div class="story">
+                                    <h4>She says her Zoom layoff was short and cruel. Why virtual layoffs still lack etiquette</h4>
+                                    <img src="https://i.cbc.ca/1.6894427.1688163579!/fileImage/httpImage/image.jpg_gen/derivatives/square_220/terry-compton.jpg" alt="story-8">
+                                </div>
+                            </a>
+                            <a href="" target="_blank">
+                                <div class="story">
+                                    <h4>Multi-building 'renoviction' brings big-city scourge to small-town Ontario, tenants say</h4>
+                                    <img src="https://i.cbc.ca/1.6878108.1686861493!/fileImage/httpImage/image.jpeg_gen/derivatives/square_220/hands-off-our-homes-trenton.jpeg" alt="story-9">
+                                </div>
+                            </a>
+                            <a href="" target="_blank">
+                                <div class="story">
+                                    <h4>Djokovic displays experience in win over Hurkacz to advance to Wimbledon quarters</h4>
+                                    <img src="https://i.cbc.ca/1.6902092.1689007381!/fileImage/httpImage/image.jpg_gen/derivatives/square_220/1530884264.jpg" alt="story-10">
+                                </div>
+                            </a>
+                            <a href="" target="_blank">
+                                <div class="story">
+                                <h4>Manitoba government advertises program that does not exist</h4>
+                                <img src="https://i.cbc.ca/1.6900712.1688994297!/fileImage/httpImage/image.JPG_gen/derivatives/square_220/fighting-crime-ad.JPG" alt="story-11">
+                                </div>
+                            </a>
+                            <a href="" target="_blank">
+                                <div class="story">
+                                    <h4>Canada suffers heartbreak on penalties against U.S. in Gold Cup quarterfinals</h4>
+                                    <img src="https://i.cbc.ca/1.6901728.1688967481!/fileImage/httpImage/image.jpg_gen/derivatives/square_220/1517817012.jpg" alt="story-12">
+                                </div>
+                            </a>
+                            <a href="" target="_blank">
+                                <div class="story">
+                                    <h4>Invasive crabs are thriving in B.C. waters. Can we eat our way out of the problem?</h4>
+                                    <img src="https://i.cbc.ca/1.6900858.1688849913!/fileImage/httpImage/image.jpg_gen/derivatives/square_220/european-green-crab.jpg" alt="story-13">
+                                </div>
+                            </a>
+                            <a href="" target="_blank">
+                                <div class="story">
+                                    <h4>'I finally did it': Ottawa's Michael Woods wins 9th stage of Tour de France</h4>
+                                    <img src="https://i.cbc.ca/1.6901491.1688939120!/fileImage/httpImage/image.jpg_gen/derivatives/square_220/france-cycling-tour-de-france.jpg" alt="story-14">
+                                </div>
+                            </a>
+                            <a href="" target="_blank">
+                                <div class="story">
+                                <h4>Police identify woman killed in daytime shooting in Toronto's east end</h4>
+                                <img src="https://i.cbc.ca/1.6901226.1688839673!/fileImage/httpImage/image.JPG_gen/derivatives/square_220/karolina-huebner-makurat.JPG" alt="story-15">
+                                </div>
+                            </a>
+                            <a href="" target="_blank">
+                                <div class="story">
+                                    <h4>How to host a garage sale like a celebrity</h4>
+                                    <img src="https://i.cbc.ca/1.6897914.1688584133!/fileImage/httpImage/image.jpg_gen/derivatives/square_220/lessons-from-celebrity-tag-sales.jpg" alt="story-16">
+                                </div>
+                            </a>
+                        
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <h3>Local-News</h3>
+            <!-- clickable links to local news stations -->
+            <div class="local-stations">
+                <ul>
+                    <li><a href="https://www.cbc.ca/news/canada/calgary" target="_blank">Calgary</a></li>
+                    <li><a href="https://www.cbc.ca/news/canada/british-columbia" target="_blank">British Columbia</a></li>
+                    <li><a href="https://www.cbc.ca/news/canada/edmonton" target="_blank">Edmonton</a></li>
+                    <li><a href="https://www.cbc.ca/news/canada/saskatchewan" target="_blank">Saskatchewan</a></li>
+                    <li><a href="https://www.cbc.ca/news/canada/saskatoon" target="_blank">Saskatoon</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.cbc.ca/news/canada/manitoba" target="_blank">Manitoba</a></li>
+                    <li><a href="https://www.cbc.ca/news/canada/thunder-bay" target="_blank">Thunder Bay</a></li>
+                    <li><a href="https://www.cbc.ca/news/canada/sudbury" target="_blank">Sudbury</a></li>
+                    <li><a href="https://www.cbc.ca/news/canada/windsor" target="_blank">Windsor</a></li>
+                    <li><a href="https://www.cbc.ca/news/canada/london" target="_blank">London</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.cbc.ca/news/canada/kitchener-waterloo" target="_blank">Kitchener-Waterloo</a></li>
+                    <li><a href="https://www.cbc.ca/news/canada/hamilton" target="_blank">Hamilton</a></li>
+                    <li><a href="https://www.cbc.ca/news/canada/toronto" target="_blank">Toronto</a></li>
+                    <li><a href="https://www.cbc.ca/news/canada/ottawa" target="_blank">Ottawa</a></li>
+                    <li><a href="https://www.cbc.ca/news/canada/montreal" target="_blank">Montreal</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.cbc.ca/news/canada/new-brunswick" target="_blank">New Brunswick</a></li>
+                    <li><a href="https://www.cbc.ca/news/canada/prince-edward-island" target="_blank">Prince Edward Island</a></li>
+                    <li><a href="https://www.cbc.ca/news/canada/nova-scotia" target="_blank">Nova Scotia</a></li>
+                    <li><a href="https://www.cbc.ca/news/canada/newfoundland-labrador" target="_blank">Newfoundland Labrador</a></li>
+                    <li><a href="https://www.cbc.ca/news/canada/north" target="_blank">North</a></li>
+                </ul>
+            </div>
+            <div class="footer-apps">
+                <!-- Footer apps for ios and google play -->
+                <a href="https://play.google.com/store/apps/details?id=ca.cbc.mobile.android.cbcnewsandroidwebview&hl=en_CA&gl=US&pli=1"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="48" height="48" viewBox="0 0 24 24"><path d="M19 0c2.762 0 5 2.239 5 5v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14zm-13.698 19.776l7.022-7.001 2.474 2.468-8.346 4.627c-.317.176-.706.173-1.021-.007l-.129-.087zm6.313-7.707l-6.693 6.674v-13.348l6.693 6.674zm4.183-2.758l3.27 1.813c.322.179.521.513.521.876s-.199.697-.521.876l-3.36 1.862-2.676-2.669 2.766-2.758zm-10.57-5.022l.203-.152c.315-.18.704-.183 1.021-.007l8.436 4.677-2.564 2.556-7.096-7.074z"/></svg></a>
+
+                <a href="https://apps.apple.com/ca/app/cbc-news/id417988800"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3.814 3c.205 1.871-1.467 3.823-3.207 3.687-.215-1.634 1.322-3.611 3.207-3.687zm-.229 15.979c-1.072.021-1.416-.635-2.641-.635s-1.607.616-2.621.656c-1.715.065-4.361-3.886-4.361-7.331 0-3.165 2.205-4.734 4.132-4.762 1.033-.019 2.009.696 2.64.696.633 0 1.819-.86 3.065-.733.52.021 1.984.21 2.926 1.585-2.496 1.627-2.107 5.032.57 6.284-.524 1.519-2.093 4.211-3.71 4.24z"/></svg></a>
+                
+                
+            
+            </div>
+            <p>FWD 2023</p>
+            <div class="team">
+                <!-- Group membors -->
+                <p>Zeinab Kordeh</p> 
+                <p>Lourane Sobrepena</p>
+                <p>Mohamed Ahmed</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
