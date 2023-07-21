@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-
-/* Links
---------------------------------------------- */
-
-
-a:hover {
-    color:#ea0e0e;
-    text-decoration: none;
-=======
 @use "variables" as *;
 
 /* Links
@@ -19,23 +9,14 @@ a:hover {
 
 a:hover {
     @extend %link;
->>>>>>> Scss
 }
 
 a:visited,
 a:focus {
-<<<<<<< HEAD
-    @extend a;
-=======
     @extend %link;
->>>>>>> Scss
 }
 
 .card-information:hover h3,
 .card-information:focus h3 {
-<<<<<<< HEAD
-    @extend a;
-=======
     @extend %link;
->>>>>>> Scss
 }

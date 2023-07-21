@@ -1,17 +1,9 @@
-<<<<<<< HEAD
-
-=======
 @use "variables" as *;
->>>>>>> Scss
 
 @mixin important-text {
   display: grid;
   position: fixed;
-<<<<<<< HEAD
-  background-color: white;
-=======
   background-color: $myColor;
->>>>>>> Scss
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
