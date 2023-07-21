@@ -1,0 +1,19 @@
+
+/* Links
+--------------------------------------------- */
+
+
+a:hover {
+    color:#ea0e0e;
+    text-decoration: none;
+}
+
+a:visited,
+a:focus {
+    @extend a;
+}
+
+.card-information:hover h3,
+.card-information:focus h3 {
+    @extend a;
+}
