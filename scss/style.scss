@@ -1,7 +1,12 @@
 @use "footer";
 @use "main";
+<<<<<<< HEAD
 @use "variables";
 @use "nesting";
+=======
+@use "variables" as *;
+@use "nesting"as *;;
+>>>>>>> Scss
 @use "mixins" as *;
 @use "extend";
 
@@ -31,6 +36,20 @@ html {
 }
 
 
+<<<<<<< HEAD
+=======
+body {
+    background-color: $myColor;
+    margin: 0;
+    font-family: $mySecondFont;
+}
+
+h1{
+    font-family: $myFont,
+}
+
+
+>>>>>>> Scss
 
 /* CSS custom properties ............................... */
 
@@ -157,7 +176,11 @@ div a:first-child {
     border-left: .1rem solid black;
     padding-left:.5rem ;
     box-sizing: border-box;
+<<<<<<< HEAD
     color: #e60505;
+=======
+    color: $colorRed;
+>>>>>>> Scss
     overflow: hidden;
     margin-top: .8rem;
     position: absolute;
