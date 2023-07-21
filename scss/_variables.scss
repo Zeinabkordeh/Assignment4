@@ -1,0 +1,16 @@
+
+$myFont: 'oswald' , Arial, Helvetica, sans-serif;
+
+$mySecondFont: "Segoe UI","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" ;
+
+$myColor: rgb(255, 255, 255);
+
+body {
+    background-color: $myColor;
+    margin: 0;
+    font-family: $mySecondFont;
+}
+
+h1{
+    font-family: $myFont,
+}
