@@ -1,0 +1,375 @@
+@use "footer";
+@use "main";
+@use "variables";
+@use "nesting";
+@use "mixins" as *;
+@use "extend";
+
+/* Typography
+--------------------------------------------- */
+@font-face {
+	font-family: 'oswald';
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+	src: url('../font/oswald/Oswald-Bold.ttf') format('ttf');
+	font-weight: normal;
+}
+
+* {
+  margin: 0;}
+
+html {
+	scroll-padding-top: 22rem;
+	scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion) {
+	hrml{
+		scroll-behavior: auto;
+	}
+}
+
+
+
+/* CSS custom properties ............................... */
+
+
+:root {     
+    /* page specific colors */    
+    --main-color:rgb(4, 10, 65);
+    --main-color-transparent:rgba(75,104,131, 0.25);    
+    --second-color:rgb(187, 189, 190);    
+    --second-color-transparent:rgba(60, 60, 60, 0.25);
+    
+
+    /* universal palette */
+    --dark-color:#3b3a3a;             /* near-but-not black */
+    --light-color:rgb(255, 255, 255); /* not-quite white*/    
+}
+
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+
+
+
+/* pseudo selectors ............................... */
+
+
+div a:first-child {
+    color: #072179;
+}
+
+/* Header
+--------------------------------------------- */
+
+.header{
+    @include important-text;
+    z-index: 3;
+    width: 100%;
+}
+
+
+
+.site-header {
+    display: grid;
+    position: relative;
+    grid-template-columns: .5fr 1fr 1fr 1.5fr .5fr;
+    justify-items: baseline;
+    border-bottom: .05rem solid gray;
+    grid-row: 1/2;
+    width: 100%;
+}
+
+
+.global-header{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    justify-items: baseline;
+    grid-row: 2/2;
+    width: 100%;
+    align-items: left;
+}
+
+.global-nav {
+    padding-bottom: .5rem ;
+    width: 7rem;
+}
+
+#covid-link {
+    font-weight: 700;
+}
+
+.global-link {
+    padding: 1rem .5rem;
+    font-size: .9rem;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+ 
+#logo {
+    width: 3rem;
+    margin: 1rem ; 
+    grid-column: 1/5;
+}
+
+
+.site-navigation {
+	position:relative;
+  display: flex;
+}
+
+.site-navigation ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.site-navigation.toggled ul {
+	display: block;
+}
+
+.menuButton{
+    background-color: transparent;
+    border: none;
+    border-left: .1rem solid black;
+    padding-left:.5rem ;
+    box-sizing: border-box;
+    color: #e60505;
+    overflow: hidden;
+    margin-top: .8rem;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 10;
+    grid-column: 2/5;
+    width: 5rem;
+}
+
+.headerSearchBar{
+    display: none;
+}
+
+#searchButton{
+    position: absolute;
+    grid-column: 5/5;
+    fill: #545454;
+    border: 0;
+    color: #545454;
+    text-decoration: none;
+    top: 1.1rem;
+    justify-self: center;
+    margin-left: 5rem;
+}
+
+.icon {
+    position: relative;
+    padding-right:0;
+}
+
+.chevronIcon{
+    vertical-align: middle;
+}
+
+.searchText,
+.profileText {
+    position: relative;
+    display: none;
+}
+
+
+.profileButtonNav {
+    grid-column: 5/5;
+    fill: #545454;
+    stroke: #545454;
+    background-color: transparent;
+    border: none;
+    color: #545454;
+    cursor: pointer;
+    text-decoration: none;
+    top: .2rem;
+    position: relative;
+    margin-right: 3rem;
+}
+
+.menuButtonCloseTitle{
+    display: none;
+}
+
+
+ 
+/* hamburger menu ..................*/
+
+.navbar-nav-ml-auto {
+    list-style-type: none;  
+}
+  
+.site-navigation {
+    position:relative;
+}
+
+.site-navigation ul {
+    list-style: none;
+    text-align: center;
+    display: none;
+    background-color: #a5a5a5;
+    position: fixed;
+    padding: 1rem;
+    top: 3.5rem;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    align-items: center;
+}
+
+.site-navigation.toggled ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-navigation a {
+    display: block;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding-top: .1rem;
+    margin: 0;
+}
+
+.menu-toggle ul{
+    background-color: #4e4d4d;
+}
+
+.nav-link{
+	padding: .5rem;
+    color: rgb(255, 255, 255);
+    width: 3rem;
+}
+
+
+/* CSS transforms ............................... */
+
+
+.nav-link:hover {
+    border: .1rem solid white;
+    width: 3rem;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+@media screen and (min-width: 68em) {
+
+    .site-header {
+        grid-template-columns: .5fr 1fr 5fr 1.5fr 1.5fr;
+
+    }
+
+    .header-wrapper{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    .menuButton{
+        font-size: 1.2rem;
+        font-weight: 700; 
+        margin: 1rem 0;
+        width: 7rem;
+    }
+
+	.profileButtonNav {
+        grid-column: 5/5;
+        fill: #545454;
+        stroke: #545454;
+        background-color: transparent;
+        border: none;
+        color: #545454;
+        cursor: pointer;
+        text-decoration: none;
+
+        top: .1rem;
+    }
+
+    #searchButton{
+        position: absolute;
+        grid-column: 4/5;
+        fill: #545454;
+        border: 0;
+        color: #545454;
+        text-decoration: none;
+        top: 1.25rem;
+        justify-self: center;
+    }
+
+    #logo {
+        width: 6rem;
+        margin: 1rem ; 
+        grid-column: 1/5;
+    }
+
+
+    .global-nav {
+        padding-bottom: .5rem ;
+        padding-left: 1rem;
+        width: 100%;
+    }
+
+    .site-navigation li {
+        width: 7%;
+    }
+
+    .searchText,
+    .profileText {
+        font-size: 1.1rem;
+        display: inline;
+    }
+
+    .global-link {
+        font-size: 1.1rem;
+    }
+
+    .icon {
+        position: relative;
+        padding-right:.5rem;
+    }
+    
+    .site-navigation.toggled ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+
+
+
