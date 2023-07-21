@@ -5,12 +5,4 @@ $mySecondFont: "Segoe UI","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple C
 
 $myColor: rgb(255, 255, 255);
 
-body {
-    background-color: $myColor;
-    margin: 0;
-    font-family: $mySecondFont;
-}
-
-h1{
-    font-family: $myFont,
-}
+$colorRed: red;

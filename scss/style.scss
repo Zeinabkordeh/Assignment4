@@ -1,7 +1,7 @@
 @use "footer";
 @use "main";
-@use "variables";
-@use "nesting";
+@use "variables" as *;
+@use "nesting"as *;;
 @use "mixins" as *;
 @use "extend";
 
@@ -28,6 +28,17 @@ html {
 	hrml{
 		scroll-behavior: auto;
 	}
+}
+
+
+body {
+    background-color: $myColor;
+    margin: 0;
+    font-family: $mySecondFont;
+}
+
+h1{
+    font-family: $myFont,
 }
 
 
@@ -157,7 +168,7 @@ div a:first-child {
     border-left: .1rem solid black;
     padding-left:.5rem ;
     box-sizing: border-box;
-    color: #e60505;
+    color: $colorRed;
     overflow: hidden;
     margin-top: .8rem;
     position: absolute;

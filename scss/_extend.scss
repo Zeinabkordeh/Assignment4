@@ -1,19 +1,22 @@
+@use "variables" as *;
 
 /* Links
 --------------------------------------------- */
-
+%link {
+    color: $colorRed ;
+    text-decoration: none;
+}
 
 a:hover {
-    color:#ea0e0e;
-    text-decoration: none;
+    @extend %link;
 }
 
 a:visited,
 a:focus {
-    @extend a;
+    @extend %link;
 }
 
 .card-information:hover h3,
 .card-information:focus h3 {
-    @extend a;
+    @extend %link;
 }

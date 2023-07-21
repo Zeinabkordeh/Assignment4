@@ -9,7 +9,6 @@
   position: relative;
   top: 8rem;
 }
-
 .footer h3 {
   color: #2a2a2a;
   padding: 0;
@@ -413,16 +412,6 @@ div h3 {
     display: none;
   }
 }
-body {
-  background-color: rgb(255, 255, 255);
-  margin: 0;
-  font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-h1 {
-  font-family: "oswald", Arial, Helvetica, sans-serif;
-}
-
 nav ul {
   margin: 0;
   padding: 0;
@@ -439,13 +428,12 @@ nav a {
 
 /* Links
 --------------------------------------------- */
-a:hover, .card-information:hover h3:hover,
-.card-information:focus h3:hover {
-  color: #ea0e0e;
+.card-information:hover h3,
+.card-information:focus h3, a:visited,
+a:focus, a:hover {
+  color: red;
   text-decoration: none;
-}
-
-/* Typography
+} /* Typography
 --------------------------------------------- */
 @font-face {
   font-family: "oswald";
@@ -469,6 +457,16 @@ html {
     scroll-behavior: auto;
   }
 }
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h1 {
+  font-family: "oswald", Arial, Helvetica, sans-serif;
+}
+
 /* CSS custom properties ............................... */
 :root {
   /* page specific colors */
@@ -504,7 +502,7 @@ div a:first-child {
 .header {
   display: grid;
   position: fixed;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
@@ -583,7 +581,7 @@ div a:first-child {
   border-left: 0.1rem solid black;
   padding-left: 0.5rem;
   box-sizing: border-box;
-  color: #e60505;
+  color: red;
   overflow: hidden;
   margin-top: 0.8rem;
   position: absolute;

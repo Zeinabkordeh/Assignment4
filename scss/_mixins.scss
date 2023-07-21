@@ -1,9 +1,9 @@
-
+@use "variables" as *;
 
 @mixin important-text {
   display: grid;
   position: fixed;
-  background-color: white;
+  background-color: $myColor;
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
